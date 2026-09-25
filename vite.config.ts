@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+  base: "/Synth-Web/",
   server: { port: 3000 },
   plugins: [tsConfigPaths(), tanstackStart(), viteReact(), tailwindcss()],
 });
